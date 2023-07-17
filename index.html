@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Anam Chemistry Academy</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+        <div class="logo"><a href="#">ANAM CHEMISTRY ACADEMY</a></div>
+        <ul class="links">
+            <li><a href="https://www.facebook.com/groups/anamchemistryacademy">Our Group</a></li>
+            <li><a href="https://www.youtube.com/@HasanAnam">YouTube</a></li>
+            <li><a href="https://www.hasananam.com/">Courses</a></li>
+        </ul>
+        <a href="https://www.facebook.com/AnamChemistryAcademy" class="action_btn">Contact Us</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="dropdown_menu">
+        <li><a href="https://www.facebook.com/groups/anamchemistryacademy">Our Group</a></li>
+        <li><a href="https://www.youtube.com/@HasanAnam">YouTube</a></li>
+        <li><a href="https://www.hasananam.com/">Courses</a></li>
+        <li><a href="https://www.facebook.com/AnamChemistryAcademy" class="action_btn">Contact Us</a></li>
+    </div>
+    </header>
+    <div class="wrapper">
+        <h1>CLASS 1</h1>
+     </div>
+     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/845982205?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="20" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Ph1"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const DropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function() {
+            DropDownMenu.classList.toggle('open')
+            const isOpen = DropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+    </script>
+    <footer>
+    <div class="center">
+    Copyright &copy; NidarTCH Tech Team Allrights reserved   
+     </div>
+  </footer>
+</body>
+</html>
